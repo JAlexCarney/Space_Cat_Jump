@@ -1,63 +1,45 @@
 fileFormatVersion: 2
-guid: c2d3b0871e586e24f9698ee6af1f799e
+guid: cdb0cc8ca9aac2a4d84c6aa3c1cbf52b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2819444299966434162
-    second: Test_TileMap2_0
+      213: 7166236263522030466
+    second: Run (32x32)_0
   - first:
-      213: 2891217535569272758
-    second: Test_TileMap2_1
+      213: 2470319409956435798
+    second: Run (32x32)_1
   - first:
-      213: 589655078103841805
-    second: Test_TileMap2_2
+      213: -4540918584354326388
+    second: Run (32x32)_2
   - first:
-      213: -7287186528728911139
-    second: Test_TileMap2_3
+      213: -4455822056875728695
+    second: Run (32x32)_3
   - first:
-      213: 4922963771407568542
-    second: Test_TileMap2_4
+      213: -5364790588639958657
+    second: Run (32x32)_4
   - first:
-      213: 7975900137306096848
-    second: Test_TileMap2_5
+      213: -1512656188830553638
+    second: Run (32x32)_5
   - first:
-      213: 7563113256620222921
-    second: Test_TileMap2_6
+      213: -2754230144694611447
+    second: Run (32x32)_6
   - first:
-      213: -4375029002001917567
-    second: Test_TileMap2_7
+      213: -2419971920513260168
+    second: Run (32x32)_7
   - first:
-      213: 5580026188648652449
-    second: Test_TileMap2_8
+      213: 1843850012483549754
+    second: Run (32x32)_8
   - first:
-      213: 1908650350710874075
-    second: Test_TileMap2_9
+      213: 241620830004830169
+    second: Run (32x32)_9
   - first:
-      213: 8592374569384583309
-    second: Test_TileMap2_10
+      213: -362971539341918764
+    second: Run (32x32)_10
   - first:
-      213: 5771062842065523376
-    second: Test_TileMap2_11
-  - first:
-      213: 5734281814424258286
-    second: Test_TileMap2_12
-  - first:
-      213: 4557529477114227087
-    second: Test_TileMap2_13
-  - first:
-      213: 7673095973571439578
-    second: Test_TileMap2_14
-  - first:
-      213: -1334568571267324666
-    second: Test_TileMap2_15
-  - first:
-      213: 4819893813460983744
-    second: Test_TileMap2_16
-  - first:
-      213: -4094766323949709818
-    second: Test_TileMap2_17
+      213: 2178398316516280758
+    second: Run (32x32)_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -78,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -87,8 +70,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -100,7 +83,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,14 +98,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,7 +118,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,7 +142,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,11 +153,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Test_TileMap2_0
+      name: Run (32x32)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 161
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -171,18 +167,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e843084e8525fd8d0800000000000000
-      internalID: -2819444299966434162
+      spriteID: cf29c0827376d8b4da780f1b66525bec
+      internalID: 7166236263522030466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_1
+      name: Run (32x32)_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 161
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -192,18 +188,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bf9cffb70baf1820800000000000000
-      internalID: 2891217535569272758
+      spriteID: 17df3ff5e0c90dc40b82af7bd81c5332
+      internalID: 2470319409956435798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_2
+      name: Run (32x32)_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 161
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -213,18 +209,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0c726e5b20ee2800800000000000000
-      internalID: 589655078103841805
+      spriteID: 0260d953c3b86064a892dce8890e5dfe
+      internalID: -4540918584354326388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_3
+      name: Run (32x32)_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 129
+        x: 96
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -234,18 +230,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2f9171676beda90800000000000000
-      internalID: -7287186528728911139
+      spriteID: 9ca7d76d640dde44fb0ae8db729f9c0c
+      internalID: -4455822056875728695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_4
+      name: Run (32x32)_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 129
+        x: 128
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -255,18 +251,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9e8dd49771e15440800000000000000
-      internalID: 4922963771407568542
+      spriteID: 02ce8ccf64a368f46acf7eb7585b50c2
+      internalID: -5364790588639958657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_5
+      name: Run (32x32)_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 129
+        x: 160
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -276,18 +272,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d48e10bae610be60800000000000000
-      internalID: 7975900137306096848
+      spriteID: cef8648e6664cfc4c8f2a084559c5641
+      internalID: -1512656188830553638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_6
+      name: Run (32x32)_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 97
+        x: 192
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -297,18 +293,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c965e09f6395f860800000000000000
-      internalID: 7563113256620222921
+      spriteID: 09a9729bf9241c44eb62377320f0de31
+      internalID: -2754230144694611447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_7
+      name: Run (32x32)_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 97
+        x: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -318,18 +314,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 189d4a57d46c843c0800000000000000
-      internalID: -4375029002001917567
+      spriteID: a79dbc8803070634b8a84f7630b4b279
+      internalID: -2419971920513260168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_8
+      name: Run (32x32)_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 97
+        x: 256
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -339,18 +335,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ae97cb114c307d40800000000000000
-      internalID: 5580026188648652449
+      spriteID: 4aabdc85215ac6f4db556cff0c671ff6
+      internalID: 1843850012483549754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_9
+      name: Run (32x32)_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 65
+        x: 288
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -360,18 +356,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdfdb8aa163ec7a10800000000000000
-      internalID: 1908650350710874075
+      spriteID: 0fc65caf3a25eca4ea4ac99d52444916
+      internalID: 241620830004830169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_10
+      name: Run (32x32)_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 65
+        x: 320
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -381,18 +377,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d80a441852f3e3770800000000000000
-      internalID: 8592374569384583309
+      spriteID: ca5b7d40e7cb58a41a51ab99e30a7c19
+      internalID: -362971539341918764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Test_TileMap2_11
+      name: Run (32x32)_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 65
+        x: 352
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -402,134 +398,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b295c5141fe61050800000000000000
-      internalID: 5771062842065523376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_TileMap2_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 33
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee68dbebde2449f40800000000000000
-      internalID: 5734281814424258286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_TileMap2_13
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 33
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f89e3c0a9e89f3f30800000000000000
-      internalID: 4557529477114227087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_TileMap2_14
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 33
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adba43852205c7a60800000000000000
-      internalID: 7673095973571439578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_TileMap2_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 605e53d84f8aa7de0800000000000000
-      internalID: -1334568571267324666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_TileMap2_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 1
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cfd17ee2e3b3e240800000000000000
-      internalID: 4819893813460983744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Test_TileMap2_17
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 1
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 606debe29b77c27c0800000000000000
-      internalID: -4094766323949709818
+      spriteID: eca92b040579b7f43a3be5aa077e7e57
+      internalID: 2178398316516280758
       vertices: []
       indices: 
       edges: []
@@ -544,6 +414,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Run (32x32)_9: 241620830004830169
+      Run (32x32)_5: -1512656188830553638
+      Run (32x32)_11: 2178398316516280758
+      Run (32x32)_6: -2754230144694611447
+      Run (32x32)_3: -4455822056875728695
+      Run (32x32)_7: -2419971920513260168
+      Run (32x32)_1: 2470319409956435798
+      Run (32x32)_0: 7166236263522030466
+      Run (32x32)_2: -4540918584354326388
+      Run (32x32)_4: -5364790588639958657
+      Run (32x32)_10: -362971539341918764
+      Run (32x32)_8: 1843850012483549754
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

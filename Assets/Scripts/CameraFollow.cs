@@ -5,7 +5,13 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D currentRoom;
+    private BoxCollider2D nextRoom;
     [SerializeField] private new Camera camera;
+
+    private void Start()
+    {
+        nextRoom = currentRoom;
+    }
 
     void Update()
     {
@@ -23,7 +29,15 @@ public class CameraFollow : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Room"))
         {
-            currentRoom = collision.gameObject.GetComponent<BoxCollider2D>();
+            nextRoom = collision.gameObject.GetComponent<BoxCollider2D>();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Room"))
+        {
+            currentRoom = nextRoom;
         }
     }
 }

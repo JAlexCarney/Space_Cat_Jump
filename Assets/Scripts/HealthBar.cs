@@ -29,8 +29,7 @@ public class HealthBar : MonoBehaviour
         health += dif;
         if (health <= 0) 
         {
-            // Player is dead
-            return true;
+            health = 0;
         }
         if (health >= maxHealth) 
         {
@@ -49,7 +48,7 @@ public class HealthBar : MonoBehaviour
             }
         }
 
-        // Player is NOT dead
+        if (health == 0) { return true; }
         return false;
     }
 }

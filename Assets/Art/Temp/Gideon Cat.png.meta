@@ -1,0 +1,1182 @@
+fileFormatVersion: 2
+guid: 3738a2fbca8294347b9f8abb5584a5c1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gideon Cat_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 112
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd6e20b73701854ca80df87f7d0f625
+      internalID: -340347890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 112
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01723f17651ec3458b1aec758801d3b
+      internalID: 1146402258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 112
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9831ccba638dfd14380b23d2aa9cfe43
+      internalID: -141330242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bf4e21d39799f4aa15c811a427c151
+      internalID: -2016360510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 112
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49485828fb830354dae9b87cea2bb044
+      internalID: -669822716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 112
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6e99f08feb5af40a6d05557d287bdd
+      internalID: -1412057569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_8
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 75
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789cf0d6e64fef6419d9d20b0936574b
+      internalID: 199845552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 82
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59e0e0a4c3723140847e05e331d45b3
+      internalID: 701592348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_10
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 81
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683aa76007c33474fb81b445bae292a6
+      internalID: 1668061294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_11
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 73
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2601729bd4888724dae2db816a667a50
+      internalID: 1496221832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 73
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d405c03f2a6b10488aa6053a219c434
+      internalID: -53242095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_21
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 73
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1e075e5a4707b4eaf4ead35cb00621
+      internalID: -2113890426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 73
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7186bea1770b20142b0710ad8d6b99ac
+      internalID: 756621278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_23
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 73
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e5a9872b46ff446af0029e232af8e8
+      internalID: 1940496959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_24
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 73
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff52feb1eed885f4686002774b515604
+      internalID: -2007847737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_25
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 73
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e256b6e84aeaa574eb4fb722b0d41d54
+      internalID: -948536721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_26
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 73
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62786266e89ccdf4791a7aff14e3ce91
+      internalID: -2026464310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_27
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 73
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3aeed54e2f3d149909af5668e4e8f8
+      internalID: -588099136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 34
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ce488ec4ffc86498da03ed4ee19c19
+      internalID: 73663785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_29
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 34
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae2fb6b2c17bd34f8e5b82dd23debea
+      internalID: 2113803888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_30
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 34
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33ba0e1e5bf7f146b6cc5f1f67d695d
+      internalID: -1130302845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_31
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 34
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e62564cd9903a74ebbe9a8fa8a1b0b0
+      internalID: -1771684155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_33
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 34
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf5f0bac1c0a64438ba603945c7f671
+      internalID: -890090174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_35
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 34
+        width: 63
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1054680a12b64fe4ba1e0c0333a920cb
+      internalID: -2042702952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_37
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 34
+        width: 64
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65be8bd10e56b6a489fb7fc9257d13b7
+      internalID: 488389492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_39
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 34
+        width: 63
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd07c76048834d44da10d91dcc302c50
+      internalID: 1762076333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_41
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 34
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3161ddc52aa72d542b2f663d847831be
+      internalID: -85064113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_43
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 34
+        width: 63
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bf8576f02f2914b8d1451078a4a99c
+      internalID: -564182254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_45
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 34
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0613c0f7e97706469885da43cf0f2cb
+      internalID: -714869499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_47
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 34
+        width: 63
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971cf7b925dfad44fb7044d1bde46578
+      internalID: 1014885631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_49
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 34
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab865fd085c316946b79b6ebb235fe10
+      internalID: -302474065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_50
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 34
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5de38ee4acde4438db276c1a8ef0f2
+      internalID: -1910750157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_51
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 34
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a1d7f494459fc44a8771f4b88fd3ee
+      internalID: -7639772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_69
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97564bdf1e57904cbb6adf94c1aa13c
+      internalID: 1135475477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_70
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404bdf2e02cc3634d888e92be04b9897
+      internalID: 518349179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_71
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09dcf33e847ea4642a755555f25a0a60
+      internalID: 992863485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_72
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0397548c84f274aa66c0704bccf9a1
+      internalID: 441177764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_73
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa80c6e6dfa6a04497e0a4fad00a3c2
+      internalID: -1120729824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_74
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb6fce90610b54419df376329e065f3
+      internalID: -674977719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_75
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 3
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2264eafadb4134386c4d0b805096b3
+      internalID: -1657772990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_76
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 3
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e05f5f7c78d1c34ea29bb77a8c94dc0
+      internalID: -1332608376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_77
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 3
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70838ae5d46530e429c74f210afbbaa6
+      internalID: -1784316612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_78
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 3
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289a6037bdfcbce46b07475738960c12
+      internalID: 743985724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_79
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 3
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc342506d38744244bb502db5447c2b0
+      internalID: -2144309085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_80
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b19b0c6f7b0f2943a593c3017cf9fdd
+      internalID: 321767677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gideon Cat_12
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 77
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d6ed9b3ab31464fbf7706d5e0555a8
+      internalID: 1089572398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Gideon Cat_1: 1146402258
+      Gideon Cat_74: -674977719
+      Gideon Cat_31: -1771684155
+      Gideon Cat_59: -1435867389
+      Gideon Cat_80: 321767677
+      Gideon Cat_21: -2113890426
+      Gideon Cat_17: -3098402
+      Gideon Cat_24: -2007847737
+      Gideon Cat_42: -1108899575
+      Gideon Cat_64: 1837627713
+      Gideon Cat_5: -1412057569
+      Gideon Cat_12: 1089572398
+      Gideon Cat_4: -669822716
+      Gideon Cat_7: -1710981274
+      Gideon Cat_67: -834091204
+      Gideon Cat_9: 701592348
+      Gideon Cat_52: 979172898
+      Gideon Cat_27: -588099136
+      Gideon Cat_19: 1671210737
+      Gideon Cat_43: -564182254
+      Gideon Cat_30: -1130302845
+      Gideon Cat_66: 372465544
+      Gideon Cat_54: 667031515
+      Gideon Cat_26: -2026464310
+      Gideon Cat_29: 2113803888
+      Gideon Cat_18: -1474017832
+      Gideon Cat_58: -1607445420
+      Gideon Cat_37: 488389492
+      Gideon Cat_55: 1226932269
+      Gideon Cat_11: 1496221832
+      Gideon Cat_60: 11776404
+      Gideon Cat_57: 2135567880
+      Gideon Cat_71: 992863485
+      Gideon Cat_6: -1496723921
+      Gideon Cat_25: -948536721
+      Gideon Cat_20: -53242095
+      Gideon Cat_14: -634958065
+      Gideon Cat_40: -1275026372
+      Gideon Cat_32: 1910704893
+      Gideon Cat_44: -1726981194
+      Gideon Cat_63: 1465447613
+      Gideon Cat_28: 73663785
+      Gideon Cat_51: -7639772
+      Gideon Cat_48: 320949863
+      Gideon Cat_69: 1135475477
+      Gideon Cat_2: -141330242
+      Gideon Cat_23: 1940496959
+      Gideon Cat_79: -2144309085
+      Gideon Cat_33: -890090174
+      Gideon Cat_78: 743985724
+      Gideon Cat_41: -85064113
+      Gideon Cat_62: -528327834
+      Gideon Cat_36: 2056928388
+      Gideon Cat_75: -1657772990
+      Gideon Cat_16: -289252971
+      Gideon Cat_50: -1910750157
+      Gideon Cat_45: -714869499
+      Gideon Cat_22: 756621278
+      Gideon Cat_65: 571456409
+      Gideon Cat_73: -1120729824
+      Gideon Cat_68: -377706339
+      Gideon Cat_15: -1335887982
+      Gideon Cat_35: -2042702952
+      Gideon Cat_8: 199845552
+      Gideon Cat_76: -1332608376
+      Gideon Cat_77: -1784316612
+      Gideon Cat_53: 264335646
+      Gideon Cat_0: -340347890
+      Gideon Cat_3: -2016360510
+      Gideon Cat_39: 1762076333
+      Gideon Cat_38: 185927905
+      Gideon Cat_46: -1132464005
+      Gideon Cat_13: -1572290427
+      Gideon Cat_47: 1014885631
+      Gideon Cat_70: 518349179
+      Gideon Cat_10: 1668061294
+      Gideon Cat_34: 1763266883
+      Gideon Cat_56: -13377093
+      Gideon Cat_49: -302474065
+      Gideon Cat_61: -394857772
+      Gideon Cat_72: 441177764
+      Gideon Cat_81: 2032666744
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

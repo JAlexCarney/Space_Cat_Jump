@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DanageController : MonoBehaviour
+public class DamageController : MonoBehaviour
 {
     [SerializeField] private HealthBar healthBar;
 

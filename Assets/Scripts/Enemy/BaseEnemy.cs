@@ -6,39 +6,60 @@ public class BaseEnemy : MonoBehaviour
 {
     public int Health;
     // resistance to being pushed back by an attack
-    public int KnockbackResistance;
+    public float KnockbackResistance;
     public bool HeavyAttack = false;
+    public Collider2D HurtBox;
+    public AudioSource DamageTakenSound;
+    public AudioSource DeathSound;
 
-    private Rigidbody2D body;
+    private Rigidbody2D Body;
+    private Animator Anim;
+    private bool Alive = true;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        body = GetComponent<Rigidbody2D>();
+        Body = GetComponent<Rigidbody2D>();
+        Anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Die() 
     {
-    
+        DeathSound.Play();
+        Alive = false;
+        HurtBox.enabled = false;
+        Anim.SetBool("Dead", true);
+        Destroy(gameObject, DeathSound.clip.length);
     }
 
-    public void TakeDamage(int damageTaken, Vector2 direction) 
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        Health -= damageTaken;
+        if (!Alive) { return; }
+        Attack attack = collision.GetComponent<Attack>();
+        if (attack) 
+        {
+            TakeDamage(attack);
+        }
+    }
+
+    public void TakeDamage(Attack attack) 
+    {
+        Health -= attack.Damage;
         if (Health <= 0)
         {
             Die();
         }
-        else 
+        else
         {
             // Get Knocked Back
-            body.AddForce(new Vector2());
+            DamageTakenSound.Play();
+            Body.AddForce( 200f * (attack.Direction * attack.Knockback) / KnockbackResistance);
         }
     }
 }

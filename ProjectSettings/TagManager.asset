@@ -17,9 +17,9 @@ TagManager:
   - UI
   - jumpableGround
   - Hazard
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - Attack
   - 
   - 
   - 

@@ -138,3 +138,5 @@ MonoBehaviour:
   Damage: 1
   Direction: {x: 0, y: 0}
   Knockback: 1
+  Recoil: 1
+  isBounce: 0

@@ -48,15 +48,35 @@ public class BaseEnemy : MonoBehaviour
         }
     }
 
+    public void StopTheHurt() 
+    {
+        Anim.SetBool("Hurt", false);
+    }
+
     public void TakeDamage(Attack attack) 
     {
         Health -= attack.Damage;
+        Anim.SetBool("Hurt", true);
+
+        // Knock Player Back
+        if (attack.isBounce)
+        {
+            // BOING!
+            PlayerMovement.player.Bounce();
+        }
+        else 
+        {
+            // Apply Recoil to player
+            PlayerMovement.player.AddForce(attack.Direction * -200f * attack.Recoil);
+        }
+        
         if (Health <= 0)
         {
             Die();
         }
         else
         {
+            Invoke("StopTheHurt", 0.75f);
             // Get Knocked Back
             DamageTakenSound.Play();
             Body.AddForce( 200f * (attack.Direction * attack.Knockback) / KnockbackResistance);

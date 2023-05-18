@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator anim;
+    public static PlayerMovement player;
 
     [SerializeField] private LayerMask jumpableGround;
 
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        player = this;
     }
 
     // Update is called once per frame
@@ -79,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Attack")) 
         {
             Vector3 attackSpawnPosition;
-            
+
             if (dirY > 0)
             {
                 // Attack Up
@@ -147,5 +149,15 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
+
+    public void Bounce() 
+    {
+        rb.velocity = new Vector2(currentSpeed, jumpForce);
+    }
+
+    public void AddForce(Vector2 f)
+    {
+        rb.AddForce(f);
     }
 }

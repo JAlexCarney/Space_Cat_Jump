@@ -11,7 +11,7 @@ public class BaseEnemy : MonoBehaviour
     public Collider2D HurtBox;
     public AudioSource DamageTakenSound;
     public AudioSource DeathSound;
-
+    public GameObject ghost;
     private Rigidbody2D Body;
     private Animator Anim;
     private bool Alive = true;
@@ -29,13 +29,19 @@ public class BaseEnemy : MonoBehaviour
 
     }
 
+    public void ReleaseGhost() 
+    {
+        Instantiate(ghost, transform.position, transform.rotation);
+        Destroy(gameObject);
+    }
+
     public void Die() 
     {
         DeathSound.Play();
         Alive = false;
         HurtBox.enabled = false;
         Anim.SetBool("Dead", true);
-        Destroy(gameObject, DeathSound.clip.length);
+        Invoke("ReleaseGhost", DeathSound.clip.length);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

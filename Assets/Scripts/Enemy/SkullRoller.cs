@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestEnemy : BaseEnemy
+public class SkullRoller : BaseEnemy
 {
     private Transform Player;
     private bool facingRight = false;

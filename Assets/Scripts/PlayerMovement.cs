@@ -110,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded() && Input.GetButtonDown("Jump"))
         {
             jumpSoundEffect.Play();
-            rb.velocity = new Vector2(currentSpeed, jumpForce);
+            rb.velocity = new Vector2(0f, jumpForce);
         }
     }
 
@@ -153,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Bounce() 
     {
-        rb.velocity = new Vector2(currentSpeed, jumpForce);
+        rb.velocity = new Vector2(0f, jumpForce);
     }
 
     public void AddForce(Vector2 f)

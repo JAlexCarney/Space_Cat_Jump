@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public void Start()
     {
         OpenMenu(0);
+        gameObject.SetActive(false);
     }
 
     public void OpenMenu(int index) 
@@ -17,6 +18,5 @@ public class PauseMenu : MonoBehaviour
             menu.SetActive(false);
         }
         Menus[index].SetActive(true);
-        gameObject.SetActive(false);
     }
 }

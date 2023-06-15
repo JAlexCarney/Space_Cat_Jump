@@ -23,12 +23,6 @@ public class BaseEnemy : MonoBehaviour
         Anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void ReleaseGhost() 
     {
         Instantiate(ghost, transform.position, transform.rotation);

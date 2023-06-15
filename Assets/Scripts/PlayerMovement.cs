@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float dirX = 0f;
     private float dirY = 0f;
+    private float AttackCooldownSeconds = 0.5f;
+    private float AttackTimer = 0f;
     private bool facingRight = true;
     [SerializeField] private float currentSpeed = 0f;
     [SerializeField] private float acceleration = 0.5f;
@@ -59,6 +61,12 @@ public class PlayerMovement : MonoBehaviour
                 // Accelerating
                 currentSpeed += deltaX;
             }
+            
+            // Stop
+            if (deltaX == 0f && Mathf.Abs(currentSpeed) < 0.1)
+            {
+                currentSpeed = 0f;
+            }
         }
         else 
         {
@@ -77,34 +85,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (dirX > 0f) { facingRight = false; } 
         else if (dirX < 0f) { facingRight = true; }
+        AttackTimer += Time.deltaTime;
 
-        if (Input.GetButtonDown("Attack")) 
+        if (Input.GetButtonDown("Attack") && AttackTimer > AttackCooldownSeconds) 
         {
-            Vector3 attackSpawnPosition;
-
-            if (dirY > 0)
-            {
-                // Attack Up
-                attackSpawnPosition = transform.up * attackDistance + transform.position;
-            }
-            else if (dirY < 0 && !IsGrounded())
-            {
-                // Attack Down
-                attackSpawnPosition = (-transform.up) * attackDistance + transform.position;
-            }
-            else if (dirX < 0 || (dirX == 0 && facingRight))
-            {
-                // Attack Right
-                attackSpawnPosition = (-transform.right) * attackDistance + transform.position;
-            }
-            else //if (dirX > 0 || (dirX == 0 && !facingRight))
-            {
-                // Attack Left
-                attackSpawnPosition = transform.right * attackDistance + transform.position;
-            }
-
-            GameObject Attack = Instantiate(BaseAttack, attackSpawnPosition, Quaternion.identity, transform);
-            Attack.GetComponent<Attack>().Spawn(transform);
+            Attack();
+            AttackTimer = 0f;
         }
 
         if (IsGrounded() && Input.GetButtonDown("Jump"))
@@ -112,6 +98,35 @@ public class PlayerMovement : MonoBehaviour
             jumpSoundEffect.Play();
             rb.velocity = new Vector2(0f, jumpForce);
         }
+    }
+
+    private void Attack() 
+    {
+        Vector3 attackSpawnPosition;
+
+        if (dirY > 0)
+        {
+            // Attack Up
+            attackSpawnPosition = transform.up * attackDistance + transform.position;
+        }
+        else if (dirY < 0 && !IsGrounded())
+        {
+            // Attack Down
+            attackSpawnPosition = (-transform.up) * attackDistance + transform.position;
+        }
+        else if (dirX < 0 || (dirX == 0 && facingRight))
+        {
+            // Attack Right
+            attackSpawnPosition = (-transform.right) * attackDistance + transform.position;
+        }
+        else
+        {
+            // Attack Left
+            attackSpawnPosition = transform.right * attackDistance + transform.position;
+        }
+
+        GameObject Attack = Instantiate(BaseAttack, attackSpawnPosition, Quaternion.identity, transform);
+        Attack.GetComponent<Attack>().Spawn(transform);
     }
 
     private void UpdateAnimationState()

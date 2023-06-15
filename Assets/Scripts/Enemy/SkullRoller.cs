@@ -18,7 +18,7 @@ public class SkullRoller : BaseEnemy
         animator = GetComponent<Animator>();
     }
     // Update is called once per frame
-    void Update()
+    private void LookAtPlayer()
     {
         // look at player
         if (Player.position.x < transform.position.x)
@@ -35,6 +35,8 @@ public class SkullRoller : BaseEnemy
 
     private void FixedUpdate()
     {
+        LookAtPlayer();
+
         if (animator.GetBool("Hurt")) return;
 
         if (facingRight && body.velocity.x < maxSpeed) 

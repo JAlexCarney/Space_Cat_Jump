@@ -15,6 +15,8 @@ public class BaseEnemy : MonoBehaviour
     private Rigidbody2D Body;
     private Animator Anim;
     private bool Alive = true;
+    public int minReward;
+    public int maxReward;
 
     // Start is called before the first frame update
     public void Start()
@@ -29,12 +31,37 @@ public class BaseEnemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void DropMoney() 
+    {
+        int reward = Random.Range(minReward, maxReward);
+        int remaining;
+        int small = reward % 5;
+        remaining = reward / 5;
+        int medium = remaining % 5;
+        remaining = reward / 5;
+        int large = remaining;
+
+        for (int i = 0; i < small; i++) 
+        {
+            Debug.Log("1");
+        }
+        for (int i = 0; i < medium; i++)
+        {
+            Debug.Log("5");
+        }
+        for (int i = 0; i < large; i++)
+        {
+            Debug.Log("25");
+        }
+    }
+
     public void Die() 
     {
         DeathSound.Play();
         Alive = false;
         HurtBox.enabled = false;
         Anim.SetBool("Dead", true);
+        DropMoney();
         Invoke("ReleaseGhost", DeathSound.clip.length);
     }
 

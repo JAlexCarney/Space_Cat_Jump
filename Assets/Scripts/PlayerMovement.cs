@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
     private float AttackCooldownSeconds = 0.5f;
     private float AttackTimer = 0f;
     private bool facingRight = true;
+    private bool knocked = false;
+    private int knockedTimer = 0;
+    private int knockedCooldown = 30;
     [SerializeField] private float currentSpeed = 0f;
     [SerializeField] private float acceleration = 0.5f;
     [SerializeField] private float deceleration = 1f;
@@ -26,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float attackDistance = 0.75f;
     public GameObject BaseAttack;
 
-    private enum MovementState { idle, running, jumping, falling }
+    private enum MovementState { idle, running, jumping, falling, hurt }
 
     [SerializeField] private AudioSource jumpSoundEffect;
 
@@ -43,38 +46,49 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        var deltaX = dirX * acceleration;
-        if (IsGrounded())
+        if (knocked)
         {
-            if (deltaX == 0f && currentSpeed != 0)
+            knockedTimer--;
+            if (knockedTimer <= 0) 
             {
-                // Decelerate
-                currentSpeed += -1f * Mathf.Sign(currentSpeed) * deceleration;
-            }
-            else if (deltaX != 0f && currentSpeed != 0 && Mathf.Sign(currentSpeed) != Mathf.Sign(deltaX))
-            {
-                // Skid
-                currentSpeed += deltaX * skidDeceleration;
-            }
-            else
-            {
-                // Accelerating
-                currentSpeed += deltaX;
-            }
-            
-            // Stop
-            if (deltaX == 0f && Mathf.Abs(currentSpeed) < 0.1)
-            {
-                currentSpeed = 0f;
+                knocked = false;
             }
         }
         else 
         {
-            currentSpeed += deltaX;
-        }
+            var deltaX = dirX * acceleration;
+            if (IsGrounded())
+            {
+                if (deltaX == 0f && currentSpeed != 0)
+                {
+                    // Decelerate
+                    currentSpeed += -1f * Mathf.Sign(currentSpeed) * deceleration;
+                }
+                else if (deltaX != 0f && currentSpeed != 0 && Mathf.Sign(currentSpeed) != Mathf.Sign(deltaX))
+                {
+                    // Skid
+                    currentSpeed += deltaX * skidDeceleration;
+                }
+                else
+                {
+                    // Accelerating
+                    currentSpeed += deltaX;
+                }
 
-        currentSpeed = Mathf.Clamp(currentSpeed, -maxMoveSpeed, maxMoveSpeed);
-        rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
+                // Stop
+                if (deltaX == 0f && Mathf.Abs(currentSpeed) < 0.1)
+                {
+                    currentSpeed = 0f;
+                }
+            }
+            else
+            {
+                currentSpeed += deltaX;
+            }
+
+            currentSpeed = Mathf.Clamp(currentSpeed, -maxMoveSpeed, maxMoveSpeed);
+            rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
+        }
         UpdateAnimationState();
     }
 
@@ -157,6 +171,11 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.falling;
         }
 
+        if (knocked)
+        {
+            state = MovementState.hurt;
+        }
+
         anim.SetInteger("state", (int)state);
         
     }
@@ -174,5 +193,13 @@ public class PlayerMovement : MonoBehaviour
     public void AddForce(Vector2 f)
     {
         rb.AddForce(f);
+    }
+
+    public void KnockBack(Vector2 knockBackForce) 
+    {
+        rb.velocity = new Vector2();
+        rb.AddForce(knockBackForce, ForceMode2D.Impulse);
+        knocked = true;
+        knockedTimer = knockedCooldown;
     }
 }

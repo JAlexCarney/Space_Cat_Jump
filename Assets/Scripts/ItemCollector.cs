@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int coins = 0;
+    private int opals = 0;
 
     [SerializeField] private Text coinsText;
 
@@ -13,12 +13,12 @@ public class ItemCollector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Coin"))
+        if (collision.gameObject.CompareTag("Opal"))
         {
             collectionSoundEffect.Play();
-            Destroy(collision.gameObject);
-            coins++;
-            coinsText.text = "x" + coins;
+            opals += collision.gameObject.GetComponent<Opal>().value;
+            Destroy(collision.transform.parent.gameObject);
+            coinsText.text = "x" + opals;
         }
     }
 }
